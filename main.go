@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"html"
+	"math/rand"
 	"net/http"
 	"strconv"
 	"strings"
@@ -12,6 +13,11 @@ import (
 )
 
 func main() {
+	// customServeMux()
+	useNewServeMux()
+}
+
+func romanNumeralsServer() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		urlPathElements := strings.Split(r.URL.Path, "/")
 		if urlPathElements[1] == "roman_number" {
@@ -35,4 +41,22 @@ func main() {
 		MaxHeaderBytes: 1 << 20,
 	}
 	s.ListenAndServe()
+}
+
+func customServeMux() {
+	mux := &CustomServeMux{}
+	http.ListenAndServe(":8080", mux)
+}
+
+func useNewServeMux() {
+	newMux := http.NewServeMux()
+	newMux.HandleFunc("/int", func(w http.ResponseWriter, r *http.Request) {
+		fmt.Fprintln(w, rand.Intn(100))
+	})
+
+	newMux.HandleFunc("/float", func(w http.ResponseWriter, r *http.Request) {
+		fmt.Fprintln(w, rand.Float64())
+	})
+
+	http.ListenAndServe(":8080", newMux)
 }
