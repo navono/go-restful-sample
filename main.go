@@ -13,7 +13,6 @@ import (
 )
 
 func main() {
-	// customServeMux()
 	useNewServeMux()
 }
 
