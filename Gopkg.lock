@@ -2,14 +2,14 @@
 
 
 [[projects]]
-  name = "github.com/julienschmidt/httprouter"
-  packages = ["."]
-  revision = "8c199fb6259ffc1af525cc3ad52ee60ba8359669"
-  version = "v1.1"
+  branch = "master"
+  name = "github.com/navono/go-RESTful-sample"
+  packages = ["RomanNumerals"]
+  revision = "adea550bf8421903b0509ddee67d1d4da818534d"
 
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "93827bf19ae08b43b0f11739058c67fd17bea663fdcbea7a64a4b2f668cd6637"
+  inputs-digest = "1782eb24747cb07423ceb67cacdea57fd060370b18714fe8c700ac01dcac94dd"
   solver-name = "gps-cdcl"
   solver-version = 1
