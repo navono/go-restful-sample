@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/navono/REST-go-demo/RomanNumerals"
+	"github.com/navono/go-RESTful-sample/RomanNumerals"
 )
 
 func main() {
