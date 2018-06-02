@@ -15,6 +15,12 @@
 
 [[projects]]
   branch = "master"
+  name = "github.com/justinas/alice"
+  packages = ["."]
+  revision = "03f45bd4b7dad4734bc4620e46a35789349abb20"
+
+[[projects]]
+  branch = "master"
   name = "github.com/navono/go-RESTful-sample"
   packages = ["RomanNumerals"]
   revision = "adea550bf8421903b0509ddee67d1d4da818534d"
@@ -22,6 +28,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "6f2e36e7c3ccae12d4de63d3edb27975b831a0c7736b6174c2d07f927296ce9f"
+  inputs-digest = "00dc80475b8eb070b228b730f5b187af58ab9483abf4d62ea4721c042ca2e0fe"
   solver-name = "gps-cdcl"
   solver-version = 1
