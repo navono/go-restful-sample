@@ -2,6 +2,18 @@
 
 
 [[projects]]
+  name = "github.com/gorilla/context"
+  packages = ["."]
+  revision = "08b5f424b9271eedf6f9f0ce86cb9396ed337a42"
+  version = "v1.1.1"
+
+[[projects]]
+  name = "github.com/gorilla/mux"
+  packages = ["."]
+  revision = "e3702bed27f0d39777b0b37b664b6280e8ef8fbf"
+  version = "v1.6.2"
+
+[[projects]]
   branch = "master"
   name = "github.com/navono/go-RESTful-sample"
   packages = ["RomanNumerals"]
@@ -10,6 +22,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "1782eb24747cb07423ceb67cacdea57fd060370b18714fe8c700ac01dcac94dd"
+  inputs-digest = "6f2e36e7c3ccae12d4de63d3edb27975b831a0c7736b6174c2d07f927296ce9f"
   solver-name = "gps-cdcl"
   solver-version = 1

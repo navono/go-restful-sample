@@ -13,7 +13,8 @@ import (
 )
 
 func main() {
-	useNewServeMux()
+	// useNewServeMux()
+	CreateGorillaMuxHandler()
 }
 
 func romanNumeralsServer() {
